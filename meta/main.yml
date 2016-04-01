@@ -1,0 +1,11 @@
+galaxy_info:
+    author: anarcher
+    company: darkside ltd.
+    description: Ansible Role to install Ganglia monitor on Ubuntu 14.04 (or later) 
+    license: GPL 2.0
+    platforms:
+    - name: Ubuntu
+      versions:
+      - lucid
+    categories:
+    - system

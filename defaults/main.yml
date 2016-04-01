@@ -1,0 +1,3 @@
+---
+ganglia_tcp_send_host:
+ganglia_tcp_send_port: 8666
