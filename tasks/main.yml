@@ -1,6 +1,8 @@
 ---
 - name: Install ganglia-monitor
   apt: name=ganglia-monitor
+- name: Install ganglia-monitor-python
+  apt: name=ganglia-monitor-python
 - name: Configure gmond.conf 
   template: 
       src=default_gmond.conf.j2 
