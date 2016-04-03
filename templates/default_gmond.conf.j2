@@ -15,6 +15,7 @@ globals {
   gexec = no
   send_metadata_interval = 20
   {% if hostname %}override_hostname = {{ hostname }} {% endif %}
+
 }
 
 /* If a cluster attribute is specified, then all gmond hosts are wrapped inside
