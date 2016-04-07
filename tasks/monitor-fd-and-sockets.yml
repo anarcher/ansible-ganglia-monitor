@@ -3,8 +3,8 @@
   file: path="/etc/ganglia/scripts" state=directory mode=0755
 - name: Add fd-and-sockets script
   copy:
-      src="monitor-fd-sockets.sh"
-      dest="/etc/ganglia/scripts"
+      src="fd-and-sockets"
+      dest="/etc/ganglia/scripts/"
       mode=0755
 - name: Add cron for fd-and-sockets
   cron:
