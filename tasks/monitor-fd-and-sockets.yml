@@ -1,0 +1,14 @@
+---
+- name: Ensure scripts dir
+  file: path="/etc/ganglia/scripts" state=directory mode=0755
+- name: Add fd-and-sockets script
+  copy:
+      src="monitor-fd-sockets.sh"
+      dest="/etc/ganglia/scripts"
+      mode=0755
+- name: Add cron for fd-and-sockets
+  cron:
+      name="gmond-fd-and-sockets-in-use"
+      minute="*/2"
+      job="/etc/ganglia/scripts/fd-and-sockets > /dev/null 2>&1"
+

@@ -11,3 +11,4 @@
       owner=root 
       group=root
   notify: restart ganglia-monitor
+- include: monitor-fd-and-sockets.yml 

@@ -6,7 +6,11 @@ galaxy_info:
     platforms:
     - name: Ubuntu
       versions:
-      - lucid
+      - trusty
+      - utopic
+      - vivid
+      - wily
     categories:
-    - system
+      - system
+      - monitoring
 dependencies: []
